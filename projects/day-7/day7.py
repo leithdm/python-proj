@@ -1,15 +1,13 @@
 
 import random
-import hangman_words
-import hangman_art
+from hangman_words import word_list
+from hangman_art import logo, stages
 
-stages = hangman_art.stages
 game_over = False
 lives = 6
-word_list = hangman_words.word_list
 chosen_word = random.choice(word_list)
 
-print(hangman_art.logo)
+print(logo)
 print(f"Debug: Chosen word is {chosen_word}")
 display = []
 for _ in chosen_word:
