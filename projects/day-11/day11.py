@@ -32,6 +32,7 @@ def get_score(user_cards):
     return total
 
 def blackjack():
+    '''please refactor me''' 
     play_game = True
     while play_game:
         continue_playing = input("Do you want to play a game of Blackjack? Type 'y' or 'n':\n")
@@ -74,7 +75,6 @@ def blackjack():
                         check_for_another_card = False   
                     else: 
                         while computer_score < user_score:
-                            print(f"in the nasty block {computer_score}")
                             computers_cards.append(get_random_card())    
                             computer_score = get_score(computers_cards)
                             if computer_score > 21:
