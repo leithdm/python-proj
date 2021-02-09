@@ -22,7 +22,7 @@
 
 [Day 10: Functions with Outputs - Calculator](projects/day-10/day10.py)
 
-[Day 11: Functions, Randomisation, Blackjack](projects/day-11/day11_final_solution.py)
+[Day 11: Functions, Randomisation - Blackjack](projects/day-11/day11_final_solution.py)
 
 [Day 12: Scope - Number Guessing Game](projects/day-12/day12_final_solution.py)
 
@@ -32,7 +32,7 @@
 
 [Day 15/16: Object Oriented Programming - Coffee Machine](projects/day-16/main.py)
 
-[Day 17: Quiz Project](projects/day-17/main.py)
+[Day 17: OOP - Quiz Project](projects/day-17/main.py)
 
 [Day 18: Turtle & the GUI](projects/day-18/main.py)
 
