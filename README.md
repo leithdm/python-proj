@@ -1,5 +1,15 @@
 # 100 Days Of Python challenge 
 
+## Resources
+
+[Learn x in y: Python Quick Study](https://learnxinyminutes.com/docs/python/)
+
+[The Official Docs](https://docs.python.org/3/)
+
+[The HitchHiker's Guide to Python !](https://docs.python-guide.org/)
+
+[Real Python](https://realpython.com/)
+
 ## Beginner
 
 [Day 1: Working with variables - Band Name Generator](projects/day-1/day1.py)
@@ -34,16 +44,16 @@
 
 [Day 17: OOP - Quiz Project](projects/day-17/main.py)
 
-[Day 18: Turtle & the GUI](projects/day-18/main.py)
+[Day 18: Tuples, Colorgram, Turtle drawing shapes - Random Walk, Hirst Painting](projects/day-18/main.py)
 
-[Day 19: Instances, State & Higher Order Functions](projects/day-19/main.py)
+[Day 19: Instances, State & Higher Order Functions - Turtle Etch-A-Sketch, Turtle Racing Game](projects/day-19/main.py)
 
-[Day 20/21: Snake Game](projects/day-20/main.py)
+[Day 20/21: OOP - Snake Game](projects/day-20/main.py)
 
-[Day 22: Pong Game](projects/day-22/main.py)
+[Day 22: OOP - Pong Game](projects/day-22/main.py)
 
-[Day 23: Crossy Road Game (Turtle)](projects/day-23/main.py)
+[Day 23: OOP - Crossy Road Game using Turtle](projects/day-23/main.py)
 
-[Day 24: Files/Directories/Paths - Mail Merge Project](projects/day-24/main.py)
+[Day 24: Files/Directories/Paths, Writing to a File - Mail Merge Project](projects/day-24/main.py)
 
-[Day 25: Working with CSV Data and the Pandas Library - US States Game](projects/day-25/main.py)
+[Day 25: Working with CSV Data and the Pandas Library - Squirrel Census, US States Game](projects/day-25/main.py)

@@ -39,9 +39,6 @@ import random
 #
 # screen.exitonclick()
 
-
-
-
 # turtle race
 
 screen = Screen()
@@ -73,9 +70,5 @@ while is_race_on:
                 print(f"You've lost! The {winning_color} turtle is the winner!")
         rand_distance = random.randint(0, 10)
         turtle.forward(rand_distance)
-
-
-
-
 
 screen.exitonclick()

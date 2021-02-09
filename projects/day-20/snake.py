@@ -1,6 +1,7 @@
 # snake class
 from turtle import Turtle
 
+# 3 segments to define the snake
 STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 UP = 90
