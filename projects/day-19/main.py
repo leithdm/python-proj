@@ -39,7 +39,10 @@ import random
 #
 # screen.exitonclick()
 
-# tutle race
+
+
+
+# turtle race
 
 screen = Screen()
 screen.setup(width=500, height=400)

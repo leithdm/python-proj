@@ -31,6 +31,14 @@ class Snake:
         new_segment.goto(position)
         self.segments.append(new_segment)
 
+    def reset(self):
+        # move the existing snake off-screen
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        self.create()
+        self.head = self.segments[0]
+
     def move(self):
         # initially, we are moving the 3rd segment coordinates to the 2nd, (range(start=2, stop=0, step=-1)
         # 2nd segment to the first,
