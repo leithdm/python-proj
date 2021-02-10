@@ -8,7 +8,7 @@
 
 [The HitchHiker's Guide to Python !](https://docs.python-guide.org/)
 
-[Real Python](https://realpython.com/)
+[Real Python Tutorials](https://realpython.com/)
 
 ## Beginner
 
@@ -40,7 +40,7 @@
 
 ## Intermediate
 
-[Day 15/16: Object Oriented Programming - Coffee Machine](projects/day-16/main.py)
+[Day 15/16: OOP - Coffee Machine](projects/day-16/main.py)
 
 [Day 17: OOP - Quiz Project](projects/day-17/main.py)
 
