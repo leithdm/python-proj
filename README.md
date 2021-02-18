@@ -1,4 +1,4 @@
-# 100 Days Of Python challenge 
+# Python Projects
 
 ## Resources
 
