@@ -1,21 +1,29 @@
-# import csv
+import csv
 import pandas
 
 
-# 1. using import csv
+# 1. using 'import csv'
 # with open("weather_data.csv") as data_file:
 #     data = csv.reader(data_file)
 #     temperatures = []
 #     for row in data:
-#         if row[1] == "temp":
-#             continue
-#         temperatures.append(int(row[1]))
+#         # do not include 'temp' text from the first row
+#         if row[1] != "temp":
+#             temperatures.append(int(row[1]))
 #     print(temperatures)
 
 
+# 2. using 'import pandas'. Whenever there is a csv file, best to use pandas
+# Pandas Documentation: https://pandas.pydata.org/docs/
+# Pandas API ref: https://pandas.pydata.org/docs/reference/index.html
+
+# look how well formatted the data is !
+data = pandas.read_csv("weather_data.csv")
+print(data)
+print(data['temp'])
 
 
-# 2. using import pandas. This reads a TradeZero .csv file
+# Code below reads in a TradeZero .csv file - pretty neat
 # data = pandas.read_csv("trade_data.csv")
 # net = round(data["Net Proceeds"].sum(),2)
 # gross = round(data["Gross Proceeds"].sum(),2)
@@ -79,14 +87,14 @@ import pandas
 # data_for_csv.to_csv("squirrel_count.csv")
 
 # alternate method for squirrel count
-data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
-gray_count = len(data[data["Primary Fur Color"] == "Gray"])
-red_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
-black_count = len(data[data["Primary Fur Color"] == "Black"])
-new_dict = {
-    "Fur Color": ["grey", "red", "black"],
-    "Count": [gray_count, red_count, black_count]
-}
-
-data_for_csv = pandas.DataFrame(new_dict)
-data_for_csv.to_csv("squirrel_count.csv")
+# data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+# gray_count = len(data[data["Primary Fur Color"] == "Gray"])
+# red_count = len(data[data["Primary Fur Color"] == "Cinnamon"])
+# black_count = len(data[data["Primary Fur Color"] == "Black"])
+# new_dict = {
+#     "Fur Color": ["grey", "red", "black"],
+#     "Count": [gray_count, red_count, black_count]
+# }
+#
+# data_for_csv = pandas.DataFrame(new_dict)
+# data_for_csv.to_csv("squirrel_count.csv")

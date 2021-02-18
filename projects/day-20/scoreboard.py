@@ -16,6 +16,7 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.update_scoreboard()
 
+    # read high-score from data.txt
     def get_highscore(self):
         with open("data.txt") as file:
             return int(file.read())

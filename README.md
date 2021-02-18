@@ -48,7 +48,7 @@
 
 [Day 19: Instances, State & Higher Order Functions - Turtle Etch-A-Sketch, Turtle Racing Game](projects/day-19/main.py)
 
-[Day 20/21: OOP - Snake Game](projects/day-20/main.py)
+[Day 20/21: OOP, Writing High Score to file - Snake Game](projects/day-20/main.py)
 
 [Day 22: OOP - Pong Game](projects/day-22/main.py)
 
