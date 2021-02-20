@@ -15,16 +15,20 @@ all_states = data['state'].to_list()
 guessed_states = []
 correct_answers = 0
 while len(guessed_states) < 50:
+    # .title() makes the first letter a Capital letter, to reflect the data
     answer_state = screen.textinput(title=f"Score is: {correct_answers}/50",
                                     prompt="What's another state's name?").title()
 
     # code-word to exit game
     if answer_state == "Exit":
         # generate a csv file of all the states that have not been guessed by the user
-        missed_states = []
-        for state in all_states:
-            if state not in guessed_states:
-                missed_states.append(state)
+        # missed_states = []
+        # for state in all_states:
+        #     if state not in guessed_states:
+        #         missed_states.append(state)
+
+        # using List Comprehension, instead of code above to generate a csv for all states not guessed
+        missed_states = [state for state in all_states if state not in guessed_states ]
         data_for_csv = pandas.DataFrame(missed_states)
         data_for_csv.to_csv("states_to_learn.csv")
         break
@@ -41,8 +45,6 @@ while len(guessed_states) < 50:
         t.goto(int(state_data['x']), int(state_data['y']))
         # write the name of the state
         t.write(answer_state)
-
-
 
 
 # function to get the mouse click coordinates

@@ -19,21 +19,21 @@ with open("weather_data.csv") as data_file:
 # Pandas Documentation: https://pandas.pydata.org/docs/
 # Pandas API ref: https://pandas.pydata.org/docs/reference/index.html
 
-# look how well formatted the data is !
+# well formatted data
 data = pandas.read_csv("weather_data.csv")
 print(data)
 print(data['temp'])
+
+# 2 primary data structures - Series (1-dimensional, like a single excel column),
+# and DataFrame (2-dimensional, like the whole table)
 # determine what the panda 'type' is of data and data["temp"]
 print(type(data))
 print(type(data["temp"]))
 
-# 2 primary data structures - Series (1-dimensional, like a single excel column),
-# and DataFrame (2-dimensional, like the whole table)
-
 # convert a panda Dataframe to a dictionary [note: check the API ref]
 print(data.to_dict())
 # convert a panda Series to a list
-print(data["temp"].to_list())
+print(data["temp"].to_list())  # could also use data.temp
 # get average temp
 print(mean(data["temp"].to_list()))
 # mean using panda in-built function
@@ -89,7 +89,6 @@ data_2.to_csv("new_data_test.csv")
 # date = data[data["T/D"] == "02/22/2019"]
 # rows_date = date[date["Symbol"] == "HYRE"]
 # print(rows_date)
-
 
 
 # 3. Using import pandas. Analysing squirrel data

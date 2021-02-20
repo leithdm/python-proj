@@ -57,3 +57,5 @@
 [Day 24: Files/Directories/Paths, Writing to a File - Mail Merge Project](projects/day-24/main.py)
 
 [Day 25: Working with CSV Data and the Pandas Library - Squirrel Census, US States Game](projects/day-25/main.py)
+
+[Day 26: List Comprehension - NATO Alphabet](projects/day-26/initial.py)
