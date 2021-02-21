@@ -58,4 +58,6 @@
 
 [Day 25: Working with CSV Data and the Pandas Library - Squirrel Census, US States Game](projects/day-25/main.py)
 
-[Day 26: List Comprehension - NATO Alphabet](projects/day-26/initial.py)
+[Day 26: List Comprehension - NATO Alphabet](projects/day-26/main.py)
+
+[Day 27: Tkinter, *args, **kwargs and Creating GUI Programs](projects/day-27/main.py)
