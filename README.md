@@ -66,4 +66,4 @@
 
 [29: Password Manager](projects/day-29/main.py)
 
-[30: Errors, Exceptions, JSON Data - improved Password Manager](projects/day-30/starter_excluding_search.py)
+[30: Errors, Exceptions, JSON Data - improved Password Manager](projects/day-30/main.py)
