@@ -61,3 +61,7 @@
 [Day 26: List Comprehension - NATO Alphabet](projects/day-26/main.py)
 
 [Day 27: Tkinter, *args, **kwargs and Creating GUI Programs](projects/day-27/main.py)
+
+[Day 28: Tkinter, Dynamic Typing - Pomodoro Productivity App](projects/day-28/main.py)
+
+[Day 29: Password Manager](projects/day-29/main.py)
