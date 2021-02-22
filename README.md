@@ -67,3 +67,7 @@
 [29: Password Manager](projects/day-29/main.py)
 
 [30: Errors, Exceptions, JSON Data - improved Password Manager](projects/day-30/main.py)
+
+[31: Tkinter - Flash Card App for learning languages](projects/day-31/main.py)
+
+[32: Email SMTP, datetime module - Automated Happy B'Day email](projects/day-32/main.py)
