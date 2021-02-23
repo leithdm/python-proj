@@ -70,4 +70,6 @@
 
 [31: Tkinter - Flash Card App for learning languages](projects/day-31/main.py)
 
-[32: Email SMTP, datetime module - Automated Happy B'Day email](projects/day-32/inital.py)
+[32: Email SMTP, datetime module - Automated Happy B'Day email](projects/day-32/main.py)
+
+[33: APIs - International Space Station tracker with email alert](projects/day-33/main.py)
