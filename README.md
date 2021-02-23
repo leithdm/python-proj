@@ -73,3 +73,5 @@
 [32: Email SMTP, datetime module - Automated Happy B'Day email](projects/day-32/main.py)
 
 [33: APIs - International Space Station tracker with email alert](projects/day-33/main.py)
+
+[34: Trivia API - Quiz App with GUI](projects/day-34/main.py)
