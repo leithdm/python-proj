@@ -75,3 +75,15 @@
 [33: APIs - International Space Station tracker with email alert](projects/day-33/main.py)
 
 [34: Trivia API - Quiz App with GUI](projects/day-34/main.py)
+
+[35: Keys, Environment Variables - Send weather SMS by Twilio](projects/day-35/main.py)
+
+[36: Stock Trading News Alert](projects/day-36/initial.py)
+
+[37: Habit Tracking](projects/day-37/main.py)
+
+[38: Workout Tracking](projects/day-38/main.py)
+
+[39/40: Flight Deal Finder](projects/day-39/main.py)
+
+[41-44: HTML/CSS - Portfolio Website](projects/day-41/main.py)

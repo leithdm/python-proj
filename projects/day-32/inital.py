@@ -45,7 +45,7 @@ password = "PASSWORD"
 #         )
 #
 
-# test-code below taken from main.py
+# test-code below taken from initial.py
 # this is the meat of the code. Nice use of tuple to get data in format wanted
 data = pandas.read_csv("birthdays.csv")
 birthdays_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}
