@@ -88,7 +88,7 @@ message = client.messages \
     body=f"{STOCK_NAME}: {percentage_diff}%\n"
          f"{article_one_title}\n"
          f"{article_one_description}",
-    from_='+15168537810',
-    to='+353873980798'
+    from_='+YOUR TWILIO PHONE',
+    to='+YOUR PHONE'
 )
 print(message.status)

@@ -1,5 +1,4 @@
 import requests
-from datetime import datetime, timedelta
 from twilio.rest import Client
 
 STOCK_NAME = "TSLA"
@@ -41,8 +40,8 @@ else:
 #Get the percentage difference in price between closing price yesterday and closing price the day before yesterday.
 percentage_diff = round(difference/float(yesterdays_closing_price) * 100, 2)
 
-#"Get news for stock if % increase > 3"
-if abs(percentage_diff) > 2:
+#"Get news/sms for stock if % increase > 3"
+if abs(percentage_diff) > 3:
     news_params = {
         "qInTitle": COMPANY_NAME,
         "apiKey": API_KEY_NEWS
@@ -59,7 +58,7 @@ if abs(percentage_diff) > 2:
         message = client.messages \
             .create(
             body=article,
-            from_='+15168537810',
-            to='+353873980798'
+            from_='+YOUR TWILIO PHONE',
+            to='+YOUR PHONE'
         )
         print(message.status)
