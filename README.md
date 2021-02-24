@@ -78,7 +78,7 @@
 
 [35: Keys, Environment Variables - Send weather SMS by Twilio](projects/day-35/main.py)
 
-[36: Stock Trading News Alert](projects/day-36/initial.py)
+[36: Alpha-Vantage, News API, Twilio API - Stock Trading SMS](projects/day-36/main.py)
 
 [37: Habit Tracking](projects/day-37/main.py)
 
