@@ -58,9 +58,9 @@
 
 [25: Working with CSV Data and the Pandas Library - Squirrel Census, US States Game](projects/day-25/main.py)
 
-[Day 26: List Comprehension - NATO Alphabet](projects/day-26/main.py)
+[26: List Comprehension - NATO Alphabet](projects/day-26/main.py)
 
-[Day 27: Tkinter, *args, **kwargs - GUI Converter ](projects/day-27/main.py)
+[27: Tkinter, *args, **kwargs and Creating GUI Programs](projects/day-27/main.py)
 
 [28: Tkinter, Dynamic Typing - Pomodoro Productivity App](projects/day-28/main.py)
 
@@ -82,9 +82,8 @@
 
 [37: Pixela API - Habit Tracking](projects/day-37/main.py)
 
-[38: Workout Tracking](projects/day-38/main.py)
+[38: Nutritionix API (NLP), Sheety API - NLP Workout Tracking with Google Sheets backend](projects/day-38/main.py)
 
 [39/40: Flight Deal Finder](projects/day-39/main.py)
 
 [41-44: HTML/CSS - Portfolio Website](projects/day-41/main.py)
->>>>>>> 41899d76577547cee29e60d5ffdaddab0fa3228a
