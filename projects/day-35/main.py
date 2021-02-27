@@ -4,8 +4,8 @@ import os
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/onecall"
 API_KEY = os.environ.get("API_KEY")
-account_sid = "AC3498c176e98b94370ceb8b2557bc2e5d"
-auth_token = "d98f3a60052b23da8d84dcc29d54e553"
+account_sid = "YOUR_ACCOUNT_SID"
+auth_token = "YOUR_AUTH_TOKEN"
 
 LAT = 53.2626911
 LONG = -6.1240941
@@ -35,7 +35,7 @@ if will_rain:
     message = client.messages \
         .create(
         body="It's going to rain today. Remember to bring an umbrella.",
-        from_='+15168537810',
-        to='+353873980798'
+        from_='YOUR TWILIO PHONE NUMBER',
+        to='YOUR PHONE NUMBER'
     )
     print(message.status)
