@@ -18,6 +18,7 @@ class DataManager:
         for city in self.destination_data:
             new_data = {
                 "price": {
+                    # note how 'sheety api' formats the column: "IATA Code' to 'iataCode'
                     "iataCode": city["iataCode"]
                 }
             }
@@ -27,3 +28,10 @@ class DataManager:
             )
 
             print(response.text)
+
+    def get_customer_emails(self):
+        customers_endpoint = "SHEET_USERS_ENDPOINT"
+        response = requests.get(customers_endpoint)
+        data = response.json()
+        self.customer_data = data["users"]
+        return self.customer_data

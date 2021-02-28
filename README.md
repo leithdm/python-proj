@@ -86,4 +86,4 @@
 
 [39/40: Tequila API, Sheety API - Flight Deal Finder](projects/day-39/main.py)
 
-[41-44: HTML/CSS - Portfolio Website](projects/day-41/main.py)
+[41-44: HTML/CSS - Portfolio Website](projects/day-41/index.html)
