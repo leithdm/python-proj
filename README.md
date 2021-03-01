@@ -96,10 +96,12 @@
 
 [48: ChromeDriver, Selenium - Automated Form fill-out, Cookie Clicker Cheat](projects/day-48/main.py)
 
-[49: ChromeDriver, Selenium - Automated LinkedIn applications](projects/day-49/main.py)
+[49: Selenium - Automated LinkedIn applications](projects/day-49/main.py)
 
-[50: ChromeDriver, Selenium - Automated Tinder Swipe-Right bot](projects/day-50/main.py)
+[50: Selenium - Automated Tinder Swipe-Right bot](projects/day-50/main.py)
 
-[51: ChromeDriver, Selenium - Automated Twit-Bot for poor internet speed](projects/day-51/main.py)
+[51: Selenium - Automated Twit-Bot for poor internet speed](projects/day-51/main.py)
 
-[52: ChromeDriver, Selenium - Automated Instagram follower](projects/day-52/main.py)
+[52: Selenium - Automated Instagram follower](projects/day-52/main.py)
+
+[53: Selenium, Beautiful Soup - Automated Data Entry](projects/day-53/main.py)
