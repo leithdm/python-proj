@@ -99,3 +99,5 @@
 [49: ChromeDriver, Selenium - Automated LinkedIn applications](projects/day-49/main.py)
 
 [50: ChromeDriver, Selenium - Automated Tinder Swipe-Right bot](projects/day-50/main.py)
+
+[51: ChromeDriver, Selenium - Automated Twit-Bot for poor internet speed](projects/day-51/main.py)
