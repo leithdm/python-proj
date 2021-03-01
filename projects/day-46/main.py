@@ -4,7 +4,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 SPOTIFY_CLIENT_ID = "YOUR CLIENT ID"
-SPOTIFY_CLIENT_SECRET = "YOUR SECRET CLIENT"
+SPOTIFY_CLIENT_SECRET = "YOUR SECRET KEY"
 
 # Scraping Billboard 100 to get the top 100 songs of that particular date
 date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")

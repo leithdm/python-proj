@@ -91,3 +91,7 @@
 [45: Web Scraping, Beautiful Soup - '100 best movies' via scraping](projects/day-45/main.py)
 
 [46: Spotify API, Spotipy - Create Spotify Playlist Top 100 songs of a given date](projects/day-46/main.py)
+
+[47: Beautiful Soup - Amazon Price Tracker](projects/day-47/main.py)
+
+[48: ChromeDriver, Selenium - Automated Form fill-out](projects/day-48/main.py)
