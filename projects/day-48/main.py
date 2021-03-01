@@ -1,65 +1,66 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+import time
 
-chrome_driver_path = "/Users/darrenleith/Documents/WebDriver/chromedriver"
-driver = webdriver.Chrome(executable_path=chrome_driver_path)
+chrome_driver_path = "YOUR CHROME DRIVER PATH"
+driver = webdriver.Chrome(chrome_driver_path)
+driver.get("http://orteil.dashnet.org/experiments/cookie/")
 
-# 1. Getting price of item from Amazon
-# driver.get("https://www.amazon.co.uk/Apple-iPhone-11-Pro-64GB/dp/B07XRPD4TV/ref=sr_1_1_sspa?crid=1G4TQ589KJ333&dchild=1&keywords=iphone+11&qid=1614607264&sprefix=iphone%2Caps%2C151&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVTBETlhLTDBRQzROJmVuY3J5cHRlZElkPUEwODA4NjE0MTU5WjYwSjhXR0E3WSZlbmNyeXB0ZWRBZElkPUEwMjQ4OTgzM09VSURTSEpNVEZWUCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=")
-# price = driver.find_element_by_id('priceblock_ourprice')
+# Get cookie to click on.
+cookie = driver.find_element_by_id("cookie")
 
+# Get upgrade item ids.
+items = driver.find_elements_by_css_selector("#store div")
+item_ids = [item.get_attribute("id") for item in items]
 
-# 2. getting stock price from TradingView
-# driver.get("https://www.tradingview.com/symbols/NASDAQ-AAPL/")
-# price = driver.find_element_by_class_name('js-symbol-ext-hrs-close')
-# # making use of x-path. If all else fails, x-path wont !
-# price = driver.find_element_by_xpath('//*[@id="anchor-page-1"]/div/div[3]/div[2]/div/div/div[1]/div[1]/div[1]')
-# print(float(price.text))
-#
-# if float(price.text) > 123.56:
-#     print("123.57 alert")
+timeout = time.time() + 5
+five_min = time.time() + 60 * 5  # 5minutes
 
+while True:
+    cookie.click()
 
-# 3. get the next 5 upcoming events on python.org
-# driver.get("https://www.python.org/")
-# events_dict = {}
-# for i in range(1, 6):
-#     date = driver.find_element_by_xpath(f'//*[@id="content"]/div/section/div[3]/div[2]/div/ul/li[{i}]/time')
-#     event = driver.find_element_by_xpath(f'//*[@id="content"]/div/section/div[3]/div[2]/div/ul/li[{i}]/a')
-#     events_dict[i-1] = {
-#         'time': date.text,
-#         'name': event.text
-#     }
-# print(events_dict)
+    # Every 5 seconds:
+    if time.time() > timeout:
 
-# alternatively...
-# event_times = driver.find_elements_by_css_selector(".event-widget time")
-# event_names = driver.find_elements_by_css_selector(".event-widget li a")
-# events = {}
+        # Get all upgrade <b> tags
+        all_prices = driver.find_elements_by_css_selector("#store b")
+        item_prices = []
 
-# 4. clicking
-# driver.get("http://en.wikipedia.org/wiki/Main_Page")
-# article_count = driver.find_elements_by_css_selector('#articlecount a')
-# all_portals = driver.find_element_by_link_text('All portals')
-# # all_portals.click()
-# # 5. searching, using keys
-# search = driver.find_element_by_name("search")
-# search.send_keys("Python")
-# # 6. hitting enter
-# search.send_keys(Keys.ENTER)
+        # Convert <b> text into an integer price.
+        for price in all_prices:
+            element_text = price.text
+            if element_text != "":
+                cost = int(element_text.split("-")[1].strip().replace(",", ""))
+                item_prices.append(cost)
 
-# 7. Filling in a form
-driver.get("http://lethalapps.com/contact.html")
-name = driver.find_element_by_id('name')
-email = driver.find_element_by_id('email')
-message = driver.find_element_by_id('message')
-submit = driver.find_element_by_css_selector("form button")
+        # Create dictionary of store items and prices
+        cookie_upgrades = {}
+        for n in range(len(item_prices)):
+            cookie_upgrades[item_prices[n]] = item_ids[n]
 
-name.send_keys("user name")
-email.send_keys("a@a.com")
-message.send_keys("lorem text")
-submit.click()
+        # Get current cookie count
+        money_element = driver.find_element_by_id("money").text
+        if "," in money_element:
+            money_element = money_element.replace(",", "")
+        cookie_count = int(money_element)
 
-#
-# driver.quit()
+        # Find upgrades that we can currently afford
+        affordable_upgrades = {}
+        for cost, id in cookie_upgrades.items():
+            if cookie_count > cost:
+                affordable_upgrades[cost] = id
 
+        # Purchase the most expensive affordable upgrade
+        highest_price_affordable_upgrade = max(affordable_upgrades)
+        print(highest_price_affordable_upgrade)
+        to_purchase_id = affordable_upgrades[highest_price_affordable_upgrade]
+
+        driver.find_element_by_id(to_purchase_id).click()
+
+        # Add another 5 seconds until the next check
+        timeout = time.time() + 5
+
+    # After 5 minutes stop the bot and check the cookies per second count.
+    if time.time() > five_min:
+        cookie_per_s = driver.find_element_by_id("cps").text
+        print(cookie_per_s)
+        break

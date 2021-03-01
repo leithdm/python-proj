@@ -94,4 +94,6 @@
 
 [47: Beautiful Soup - Amazon Price Tracker](projects/day-47/main.py)
 
-[48: ChromeDriver, Selenium - Automated Form fill-out](projects/day-48/main.py)
+[48: ChromeDriver, Selenium - Automated Form fill-out, Cookie Clicker Cheat](projects/day-48/main.py)
+
+[49: ChromeDriver, Selenium - Automated LinkedIn applications](projects/day-49/main.py)
