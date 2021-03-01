@@ -97,3 +97,5 @@
 [48: ChromeDriver, Selenium - Automated Form fill-out, Cookie Clicker Cheat](projects/day-48/main.py)
 
 [49: ChromeDriver, Selenium - Automated LinkedIn applications](projects/day-49/main.py)
+
+[50: ChromeDriver, Selenium - Automated Tinder Swipe-Right bot](projects/day-50/main.py)
