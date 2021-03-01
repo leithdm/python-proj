@@ -86,6 +86,8 @@
 
 [39/40: Tequila API, Sheety API - Flight Deal Finder](projects/day-39/main.py)
 
-[41-44: HTML/CSS - Personal Portfolio Website](projects/day-41/index.html)
+[41-44: HTML/CSS - Sample Personal Portfolio Website](projects/day-41/index.html)
 
-[45: Web Scraping, Beautiful Soup - 100 best movies via scraping](projects/day-45/main.py)
+[45: Web Scraping, Beautiful Soup - '100 best movies' via scraping](projects/day-45/main.py)
+
+[46: Spotify API, Spotipy - Create Spotify Playlist Top 100 songs of a given date](projects/day-46/main.py)
