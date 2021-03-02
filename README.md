@@ -111,3 +111,5 @@
 [55: Advanced Decorators, Rendering, Parsing URLS, Flask - Guess the number](projects/day-55/main.py)
 
 [56: Static Files, Rendering Files, Flask - Portfolio via html5up template](projects/day-56-html5up/templates/index.html)
+
+[57: n:point API, Jinja, Flask - Blog using n:Point API](projects/day-57/main.py)

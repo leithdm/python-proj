@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {# Jinja templating.
+    https://jinja.palletsprojects.com/en/2.11.x/templates/
+    Multi-line python requires {% %} as opposed to just {{ }}
+    There are also some keywords like 'endif' and 'endfor'  #}
+
+    {% for blog_post in posts: %}
+            {% if blog_post["id"] == 2: %}
+            <h1>{{ blog_post["title"] }}</h1>
+            <h2>{{ blog_post["subtitle"] }}</h2>
+            {% endif %}
+    {% endfor %}
+</body>
+</html>
