@@ -105,3 +105,5 @@
 [52: Selenium - Automated Instagram follower](projects/day-52/main.py)
 
 [53: Selenium, Beautiful Soup - Automated Data Entry](projects/day-53/main.py)
+
+[54: Python Decorators - Web Dev with Flask](projects/day-54/python_decorators.py)
