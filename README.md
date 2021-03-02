@@ -107,3 +107,5 @@
 [53: Selenium, Beautiful Soup - Automated Data Entry](projects/day-53/main.py)
 
 [54: Python Decorators - Web Dev with Flask](projects/day-54/python_decorators.py)
+
+[55: Advanced Decorators, Rendering, Parsing URLS, Flask - Guess the number](projects/day-55/main.py)
