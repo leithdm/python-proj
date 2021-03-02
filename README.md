@@ -109,3 +109,5 @@
 [54: Python Decorators - Web Dev with Flask](projects/day-54/python_decorators.py)
 
 [55: Advanced Decorators, Rendering, Parsing URLS, Flask - Guess the number](projects/day-55/main.py)
+
+[56: Static Files, Rendering Files, Flask - Portfolio via html5up template](projects/day-56-html5up/templates/index.html)
