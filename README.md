@@ -114,4 +114,6 @@
 
 [57: n:point API, Jinja, Flask - Blog using n:Point API](projects/day-57/main.py)
 
-[58/59: n:point API, Jinja, Flask - same Blog in #57 but Bootstrapped](projects/day-59/main.py)
+[58/59: n:point API, Jinja, Flask - same Blog from #57, but Bootstrapped](projects/day-59/main.py)
+
+[60: Forms, Jinja, Flask - same Blog from #57, but Bootstrapped](projects/day-59/main.py)
