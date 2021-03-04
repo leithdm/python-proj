@@ -119,3 +119,5 @@
 [60/61: WTForm, inheriting templates, Flask-Bootstrap - Logging In](projects/day-60/main.py)
 
 [62: WTForm, Tables, Flask - Coffee and Wifi (adding data to csv)](projects/day-62/main.py)
+
+[63: SQLAlchemy, SQLite - Book Library with CRUD](projects/day-63/main.py)
