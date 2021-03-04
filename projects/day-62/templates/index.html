@@ -1,0 +1,20 @@
+{% extends "head.html" %}
+
+{% block title %}Coffee and Wifi{% endblock %}
+
+{% block content %}
+<section class="jumbotron space-above py-5 text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">☕️ Coffee & Wifi 💻</h1>
+            <p class="lead text-muted">Want to work in a cafe but need power and wifi?</p>
+            <hr>
+            <p class="lead text-muted">You've found the right place! Checkout my collection of cafes with data for power
+                socket availability, wifi speed and coffee quality.</p>
+            <p>
+                <a href="{{ url_for('cafes') }}" class="btn btn-warning btn-lg my-2">Show Me!</a>
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

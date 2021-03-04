@@ -117,3 +117,5 @@
 [58/59: n:point API, Jinja, Flask - same Blog from #57, but Bootstrapped. Working HTML form](projects/day-59/main.py)
 
 [60/61: WTForm, inheriting templates, Flask-Bootstrap - Logging In](projects/day-60/main.py)
+
+[62: WTForm, Tables, Flask - Coffee and Wifi (adding data to csv)](projects/day-62/main.py)
