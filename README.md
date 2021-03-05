@@ -123,3 +123,5 @@
 [63: SQLAlchemy, SQLite - Book Library with CRUD](projects/day-63/main.py)
 
 [64: TMDB API, SQLAlchemy, WTForms, Flask - Top 10 Movies app with data parsed from TMDB API](projects/day-64/main.py)
+
+[65: Postman - Create an API for a cafe website, GET/POST/PATCH/DELETE](projects/day-65/main.py)
