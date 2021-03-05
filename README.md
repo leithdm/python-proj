@@ -121,3 +121,5 @@
 [62: WTForm, Tables, Flask - Coffee and Wifi (adding data to csv)](projects/day-62/main.py)
 
 [63: SQLAlchemy, SQLite - Book Library with CRUD](projects/day-63/main.py)
+
+[64: TMDB API, SQLAlchemy, WTForms, Flask - Top 10 Movies app with data parsed from TMDB API](projects/day-64/main.py)
