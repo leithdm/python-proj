@@ -124,6 +124,6 @@
 
 [64: TMDB API, SQLAlchemy, WTForms, Flask - Top 10 Movies app with data parsed from TMDB API](projects/day-64/main.py)
 
-[65: Postman - Create an API for a cafe website, GET/POST/PATCH/DELETE](projects/day-65/main.py)
+[65-66: Postman - Create an API for a cafe website, GET/POST/PATCH/DELETE](projects/day-65/main.py)
 
-[66: SQLite, REST - A CRUD Blog site](projects/day-66/main.py)
+[67: SQLite, REST, CKEditor - CRUD Blog site](projects/day-67/main.py)
