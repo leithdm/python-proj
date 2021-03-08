@@ -128,4 +128,6 @@
 
 [67: SQLite, REST, CKEditor - CRUD Blog site](projects/day-67/main.py)
 
-[68: LoginManager, Werkzeug.security, UserMixin, SQLAlchemy - Flask Authentication](projects/day-68/main.py)
+[68: LoginManager, Werkzeug.security, UserMixin, SQLAlchemy - Flask Authentication template](projects/day-68/main.py)
+
+[69: flask_gravatar, LoginManager, functools, werkzeug.security - Blog Site, user login, commenting](projects/day-69/main.py)
